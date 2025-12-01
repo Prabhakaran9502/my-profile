@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Profile</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f3f4f6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #111827;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #4f46e5;
+      color: white;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .card {
+      width: 420px;
+      background: #ffffffee;
+      color: #1f2937;
+      border-radius: 18px;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e5e7eb;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-weight: 300;
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    p {
+      margin-top: 15px;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
+    .skills {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .skill {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .links {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: block;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      background: #4f46e5;
+      color: #fff;
+      transition: 0.25s ease;
+    }
+
+    .btn:hover {
+      background: #4338ca;
+      transform: translateY(-2px);
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+
+      100% {
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    .card {
+      animation: fadeIn 1s ease-out, glow 2s infinite alternate ease-in-out;
+    }
+
+    .profile-img,
+    h1,
+    h3,
+    p,
+    .skills,
+    .links {
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    @media(max-width: 480px) {
+      .card {
+        width: 100%;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      .profile-img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="profile.jpeg" alt="Profile Photo" class="profile-img" />
+    <h1>Prabhakaran Arusamy</h1>
+    <h3>Software Developer</h3>
+    <p>
+      I am a passionate developer with experience in MERN JS, JavaScript, ASP.Net, Web API, MVC and SQL.
+      I love building full-stack applications and learning new technologies.
+    </p>
+
+    <ul>
+      <li>JavaScript</li>
+      <li>MERN JS</li>
+      <li>Web API</li>
+      <li>ASP.NET</li>
+      <li>MVC</li>
+      <li>SQL</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: prabhakaran.arusamy@gmail.com</p>
+    <p>Mobile: +91 96265 41071</p>
+
+    <div class="links">
+      <a href="https://linkedin.com/in/prabhakaran-arusamy" class="btn">LinkedIn</a>
+      <!-- <a href="#" class="btn">GitHub</a> -->
+      <a href="Prabhakaran_Resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </div>
+</body>
+
+</html>
